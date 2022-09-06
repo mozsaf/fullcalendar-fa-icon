@@ -32,7 +32,7 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
 calendar.render();
 
 //forcing fa-icons
-var fcIcons = document.getElementsByClassName("fc-icon");
+var fcIcons = document.querySelectorAll(".fc-icon");
 for (var i = 0; i < fcIcons.length; i++) {
     var array = [].slice.apply(fcIcons[i].classList);
         array.find(element => {
